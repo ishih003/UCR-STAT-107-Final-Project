@@ -1,7 +1,7 @@
 # UCR-STAT-107-Final-Project
 Class: UCR STAT 107
 
-Due: March19, 2026
+Due: March 19, 2026
 
 Group members: Laura Lu, Iris Shih, Brandon Moore
 
