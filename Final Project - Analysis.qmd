@@ -1,5 +1,5 @@
 ---
-title: "Analysis"
+title: "Final Report - Analysis"
 author: "Laura Lu, Iris Shih, Brandon Moore"
 date: 2026-03-19
 format:
@@ -12,19 +12,23 @@ error: true
 editor: visual
 ---
 
-## Packages Used
+Packages/Sources Used
 
-```{r}
+{r}
+#Loading necessary packages
 library(tidyverse)
 library(ggplot2)
 library(lubridate)
-```
 
-You can add options to executable code like this
+#Sourcing .R files
+source("load_clean_data.R")
 
-```{r}
-#| echo: false
-2 * 2
-```
 
-The `echo: false` option disables the printing of code (only output is displayed).
+{r}
+youtube_raw <- load_youtube_data()
+youtube <- clean_youtube_data(youtube_raw)
+
+youtube
+summary(youtube$engagement_rate)
+
+The echo: false option disables the printing of code (only output is displayed).
